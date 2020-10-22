@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start new activity:"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="standard"
+        android:onClick="startNewActivityStandard"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_single_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single Top"
+        android:onClick="startNewActivitySingleTop"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_single_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single Task"
+        android:onClick="startNewActivitySingleTask"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_single_instance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single Instance"
+        android:onClick="startNewActivitySingleInstance"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

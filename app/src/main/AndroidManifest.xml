@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.boybeak.hellolaunchmode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloLaunchMode">
+        <activity android:name=".activity.SingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="singleInstance"/>
+        <activity android:name=".activity.SingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="singleTask"/>
+        <activity android:name=".activity.SingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="singleTop"/>
+        <activity android:name=".activity.StandardActivity"
+            android:launchMode="standard"
+            android:label="standard"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
