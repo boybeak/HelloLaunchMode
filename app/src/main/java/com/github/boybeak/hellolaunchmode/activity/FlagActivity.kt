@@ -7,15 +7,16 @@ import android.util.Log
 import android.widget.Toast
 import com.github.boybeak.hellolaunchmode.R
 
-class StandardActivity : AppCompatActivity() {
+class FlagActivity : AppCompatActivity() {
 
     companion object {
-        private val TAG = StandardActivity::class.java.simpleName
+        private val TAG = FlagActivity::class.java.simpleName
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launch_mode)
+        Log.v(TAG, "onCreate this=$this")
     }
 
     override fun onNewIntent(intent: Intent?) {
@@ -25,12 +26,11 @@ class StandardActivity : AppCompatActivity() {
 
     override fun finish() {
         super.finish()
-        Log.v(TAG, "standard onDestroy ")
+        Log.v(TAG, "finish")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v(TAG, "standard onDestroy ")
+        Log.v(TAG, "onDestroy this=$this")
     }
-
 }

@@ -1,4 +1,4 @@
-package com.github.boybeak.hellolaunchmode
+package com.github.boybeak.app2
 
 import org.junit.Test
 
@@ -13,15 +13,5 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
-    }
-
-    @Test
-    fun abc() {
-        val a = 1
-        val b = 2
-        val c = a or b
-        val d = c xor b
-        println(c)
-        println(d)
     }
 }

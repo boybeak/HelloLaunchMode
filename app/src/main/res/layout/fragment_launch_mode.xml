@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.LaunchModeFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start new activity:"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="standard" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_single_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="single Top" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_single_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="single Task" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_single_instance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="single Instance" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Intent.FLAG_ACTIVITY_*** example"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/flagRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/cb_new_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Task"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_clear_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Task"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_clear_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Top"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_single_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single Top"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/goBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/go4ResultBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START for result"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start a FlagActivity with selected flag"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

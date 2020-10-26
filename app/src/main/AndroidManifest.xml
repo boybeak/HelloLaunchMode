@@ -9,18 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloLaunchMode">
-        <activity android:name=".activity.SingleInstanceActivity"
-            android:launchMode="singleInstance"
-            android:label="singleInstance"/>
-        <activity android:name=".activity.SingleTaskActivity"
+        <activity android:name=".activity.FlagActivity"
+            android:label="FlagActivity"
+            >
+            <intent-filter>
+                <action android:name="com.github.boybeak.hellolaunchmode.flag"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SingleInstanceActivity"
+            android:label="singleInstance"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.SingleTaskActivity"
+            android:label="singleTask"
             android:launchMode="singleTask"
-            android:label="singleTask"/>
-        <activity android:name=".activity.SingleTopActivity"
+            android:taskAffinity="com.github.boybeak.hellolaunchmode.singleTask" />
+        <activity
+            android:name=".activity.SingleTopActivity"
+            android:label="singleTop"
             android:launchMode="singleTop"
-            android:label="singleTop"/>
-        <activity android:name=".activity.StandardActivity"
-            android:launchMode="standard"
-            android:label="standard"/>
+            android:taskAffinity="com.github.boybeak.hellolaunchmode.singleTop" />
+        <activity
+            android:name=".activity.StandardActivity"
+            android:label="standard"
+            android:launchMode="standard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

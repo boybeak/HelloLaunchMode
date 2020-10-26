@@ -10,15 +10,12 @@ import com.github.boybeak.hellolaunchmode.R
 class SingleTopActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_single_top)
+        setContentView(R.layout.activity_launch_mode)
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        Toast.makeText(this, "onNewIntent", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "onNewIntent(${this::class.java.simpleName})", Toast.LENGTH_SHORT).show()
     }
 
-    fun startMyself(v: View) {
-        startActivity(Intent(this, SingleTopActivity::class.java))
-    }
 }
